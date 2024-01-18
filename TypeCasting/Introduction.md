@@ -3,7 +3,20 @@
 ## Why casting? 
 Casts are used to convert the type of an object, expression, function argument, or return value to that of another type.
 
-## C-Style casting (Very Bad Idea)
+
+<details>
+  <summary>C-Style casting (Very Bad Idea)</summary>
+
+1. Casting is performed when a value (variable) of one type is used in place of some other type.
+
+   ```c++
+   int i = 3;
+   double d = 2.5
+
+   double result = d / i; // i is cast to double and then used
+   ```
+    
+</details>
 
 
 ## (Silent)Implicit conversions:
@@ -30,5 +43,4 @@ double f(int i, int j)
 }
 ```
 
-In the above code, since the numerator (i) is explicitly type casted to double and denominator (j) is int, compiler will implicitly typecast j to double and
-will perform division. 
+In the above code, since the numerator (i) is explicitly type casted to double and denominator (j) is int, compiler will implicitly typecast j to double and will perform division. 
